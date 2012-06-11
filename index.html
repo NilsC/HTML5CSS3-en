@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>HTML5 und CSS3 für die coolen Kids</title>
+<!-- metadata -->
+<meta name="generator" content="hand made - with help from Eric Meyer :-)">
+<meta name="author" content="Björn und Nils">
+<meta name="company" content="XING AG">
+<!-- configuration parameters -->
+<meta name="defaultView" content="slideshow">
+<meta name="controlVis" content="hidden">
+<meta charset="utf-8">
+<!-- style sheet links -->
+<link rel="stylesheet" href="ui/default/slides.css" type="text/css" media="projection" id="slideProj">
+<link rel="stylesheet" href="ui/default/nons5stuff.css" type="text/css" media="screen, projection" id="ourStyles">
+<link rel="stylesheet" href="ui/default/bjoern.css" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="ui/default/nils.css" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="ui/default/outline.css" type="text/css" media="screen" id="outlineStyle">
+<link rel="stylesheet" href="ui/default/print.css" type="text/css" media="print" id="slidePrint">
+<link rel="stylesheet" href="ui/default/opera.css" type="text/css" media="projection" id="operaFix">
+<!-- S5 JS -->
+<script src="ui/default/slides.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div class="layout">
+<div id="controls"><!-- DO NOT EDIT --></div>
+<div id="currentSlide"><!-- DO NOT EDIT --></div>
+<div id="header"></div>
+<div id="footer">
+  <h1>HTML5/CSS3</h1>
+</div>
+
+</div>
+
+
+<div class="presentation">
+
+<div class="slide">
+  <h1 class="noshadow">HTML5 und CSS3</h1>
+  <h2>Beispiele und Hintergrundinfos für Designer</h2>
+  <p>Ihre Gastgeber heute: Björn und Nils</p>
+</div>
+
+
+<div class="slide">
+  <h1>Was soll das?</h1>
+  <p>Mit dieser kleinen Präsentation (Kaffee jemand?) wollen wir Euch zeigen, was man mit den modernen Webtechniken <span>HTML5</span> und <span>CSS3</span> samt <span>JavaScript</span> so alles machen kann.</p>
+  <p class="incremental">Einige der Dinge, die wir zeigen werden, sind nicht in allen Browsern lauffähig. Dennoch möchten wir euch <span>ermutigen</span> auch solche neuen Features zu benutzen.</p>
+  <p class="incremental">
+    Nach dieser Session kennt ihr die wichtigsten, UX relevanten Features von HTML5/CSS3. Die Präsentation hier ist HTML basiert und kann inkl. aller Features noch einmal neu erlebt werden.
+  </p>
+</div>
+
+<div class="slide">
+  <h1>Halt! Browser-Statistik ...</h1>
+  <h2 class="top-margin browsers-head">Top 10 der Browser auf XING <span>(Stand: 1. Mai 2012)</span></h2>
+  <ol class="browsers">
+    <li><span>Mozilla Firefox 11.0</span> 24.3%</li>
+    <li><span>MS Internet Explorer 8</span> 15.0%</li>
+    <li><span>MS Internet Explorer 9</span> 12.5%</li>
+    <li><span>Google Chrome 18</span> 8.1%</li>
+    <li><span>No information</span> 8.0%</li>
+    <li><span>Safari 5.1.5</span> 4.7%</li>
+    <li><span>MS Internet Explorer 7</span> 4.6%</li>
+    <li><span>Mozilla Firefox 3.6</span> 2.9%</li>
+    <li><span>Mozilla Firefox 10.0</span> 2.5%</li>
+    <li><span>Mozilla Firefox 12.0</span> 1.8%</li>
+  </ol>
+</div>
+
+<!-- CSS START -->
+<div class="slide">
+  <h1>Generated Content</h1>
+  <p>Mittlerweile ein Klassiker - Benutzt <em>:before</em> &amp; <em>:after</em></p>
+  <p class="generated-content incremental">Absatz mit Bildchen davor &amp; danach, die gar nicht da sind.</p>
+  <p class="incremental">Wir benutzen die schon recht häufig auf der Plattform:</p>
+  <img src="pics/pseudos.jpg" alt="examples for generated content on XING" class="incremental" width="629" height="250">
+</div>
+
+<div class="slide">
+  <h1>Browsersupport für Generated Content</h1>
+  <table class="support">
+    <caption>Support</caption>
+    <tr>
+      <td class="chrome">Chrome</td>
+      <td class="firefox">Firefox</td>
+      <td class="explorer">Internet Explorer</td>
+      <td class="opera">Opera</td>
+      <td class="safari">Safari</td>
+    </tr>
+    <tr>
+      <td>&hearts;</td>
+      <td>>3.5</td>
+      <td>9</td>
+      <td>&hearts;</td>
+      <td>>4</td>
+    </tr>
+  </table>
+  <p class="incremental center">Am besten nur für rein dekorative Zwecke benutzen.</p>
+</div>
+
+
+<div class="slide">
+  <h1>Gradients</h1>
+  <div class="gradientbox horizontal"></div>
+  <div class="gradientbox vertical"></div>
+  <div class="gradientbox diagonal"></div>
+  <div class="gradientbox radial"></div>
+  <div class="gradientbox shiny"></div>
+  <div class="clear"></div>
+  <p class="incremental top-margin">
+    <del>Wir können fast alles!</del> Eine ganze Menge!
+  </p>
+</div>
+
+
+<div class="slide">
+  <h1>Browsersupport für Gradients</h1>
+  <table class="support">
+    <caption>Support</caption>
+    <tr>
+      <td class="chrome">Chrome</td>
+      <td class="firefox">Firefox</td>
+      <td class="explorer">Internet Explorer</td>
+      <td class="opera">Opera</td>
+      <td class="safari">Safari</td>
+    </tr>
+    <tr>
+      <td>&hearts;</td>
+      <td>>3.6</td>
+      <td>&plusmn;</td>
+      <td>>11</td>
+      <td>&hearts;</td>
+    </tr>
+  </table>
+  <p class="incremental center">Viele Browser-Präfixes = kostspielig.</p>
+</div>
+
+
+<div class="slide">
+  <h1>Minimale/maximale Breite/Höhe</h1>
+  <div class="min-max-height">
+    <p>Beispiel für Mindesthöhe und maximale Höhe. Das geht auch mit der Breite.</p>
+    <p>min-height: 200px;</p>
+    <p>max-height: 300px;</p>
+  </div>
+  
+</div>
+
+
+<div class="slide">
+  <h1>Browsersupport für min/max Breite/Höhe</h1>
+  <table class="support">
+    <caption>Support</caption>
+    <tr>
+      <td class="chrome">Chrome</td>
+      <td class="firefox">Firefox</td>
+      <td class="explorer">Internet Explorer</td>
+      <td class="opera">Opera</td>
+      <td class="safari">Safari</td>
+    </tr>
+    <tr>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+    </tr>
+  </table>
+  <p class="incremental center">Der IE6 kann's nicht. Aber: Who cares?</p>
+</div>
+
+
+<div class="slide">
+  <h1>Round and round</h1>
+  <div class="rounded">
+    <img src="pics/jawning-chimp.jpg" width="500" height="333" alt="a jawning chimpanzee">
+  </div>
+  <dl class="pseudo-ol">
+    <dt>1</dt>
+    <dd>What ever</dd>
+    <dt>2</dt>
+    <dd>A lot of blabla and some blabla more. Just to see if long texts can be applied.</dd>
+    <dt>3</dt>
+    <dd>Finally a quit workingspace!</dd>
+  </dl>
+</div>
+
+
+<div class="slide">
+  <h1>Browsersupport für Border-Radius</h1>
+  <table class="support">
+    <caption>Support</caption>
+    <tr>
+      <td class="chrome">Chrome</td>
+      <td class="firefox">Firefox</td>
+      <td class="explorer">Internet Explorer</td>
+      <td class="opera">Opera</td>
+      <td class="safari">Safari</td>
+    </tr>
+    <tr>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+      <td>9+</td>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+    </tr>
+  </table>
+</div>
+
+
+<div class="slide">
+  <h1>Shadow on the Wall</h1>
+  <div class="box-shadow1">1</div>
+  <div class="box-shadow2">2</div>
+  <div class="box-shadow3">3</div>
+  <div class="box-shadow4">4</div>
+  <div class="box-shadow5">5</div>
+</div>
+
+
+<div class="slide">
+  <h1>Browsersupport für Box-Shadow</h1>
+  <table class="support">
+    <caption>Support</caption>
+    <tr>
+      <td class="chrome">Chrome</td>
+      <td class="firefox">Firefox</td>
+      <td class="explorer">Internet Explorer</td>
+      <td class="opera">Opera</td>
+      <td class="safari">Safari</td>
+    </tr>
+    <tr>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+      <td>9+</td>
+      <td>>10.5</td>
+      <td>&hearts;</td>
+    </tr>
+  </table>
+</div>
+
+<div class="slide">
+  <h1>Mehrfacher Hintergrund</h1>
+  <p class="multibg">
+    One box with two background pictures. 1.) The landscape. 2.) The dude. (He would never read this paper in the public ...)
+  </p>
+</div>
+
+
+<div class="slide">
+  <h1>Browsersupport für multiple Background</h1>
+  <table class="support">
+    <caption>Support</caption>
+    <tr>
+      <td class="chrome">Chrome</td>
+      <td class="firefox">Firefox</td>
+      <td class="explorer">Internet Explorer</td>
+      <td class="opera">Opera</td>
+      <td class="safari">Safari</td>
+    </tr>
+    <tr>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+      <td>9+</td>
+      <td>>10.5</td>
+      <td>&hearts;</td>
+    </tr>
+  </table>
+  <p class="incremental center">Der zweite Hintergrund sollte wirklich nur Deko sein. IE8 und 7 zeigen ihn nicht an.</p>
+</div>
+
+
+<div class="slide">
+  <h1>"I can see you!"</h1>
+  <div class="opacity">
+    <div>
+      <p>Come to Hamburg!</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="slide">
+  <h1>Browsersupport für Opacity</h1>
+  <table class="support">
+    <caption>Support</caption>
+    <tr>
+      <td class="chrome">Chrome</td>
+      <td class="firefox">Firefox</td>
+      <td class="explorer">Internet Explorer</td>
+      <td class="opera">Opera</td>
+      <td class="safari">Safari</td>
+    </tr>
+    <tr>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+    </tr>
+  </table>
+  <p class="incremental center">IEs benutzen nicht "normales" CSS, sondern MS-spezifische Filter. *seufz*</p>
+</div>
+
+
+<div class="slide">
+  <h1>Einer flog über den Text</h1>
+  <p class="overflow">
+    Da war es wieder das Geräusch. Er drehte sich rasch um und schaute in die Augen von einem Biest mit langen Fangzähnen.
+  </p>
+  <p class="incremental centered">
+    Der Text geht natürlich noch weiter. Ganz spannend sogar. Aber da kein Platz vorhanden ist, schneidet der <strong>Browser</strong> ab und macht Auslasspunkte. - Benutzen wir schon auf der Seite.
+  </p>
+</div>
+
+
+<div class="slide">
+  <h1>Browsersupport für Text-Overflow</h1>
+  <table class="support">
+    <caption>Support</caption>
+    <tr>
+      <td class="chrome">Chrome</td>
+      <td class="firefox">Firefox</td>
+      <td class="explorer">Internet Explorer</td>
+      <td class="opera">Opera</td>
+      <td class="safari">Safari</td>
+    </tr>
+    <tr>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+    </tr>
+  </table>
+</div>
+
+
+<div class="slide">
+  <h1>Der Text hat 'n Schatten</h1>
+  <p class="textshadow1">Li Europan lingues es membres del sam familie.</p>
+  <p class="textshadow2">Li Europan lingues es membres del sam familie.</p>
+  <p class="textshadow3">Li Europan lingues es membres del sam familie.</p>
+  <p class="textshadow4">Li Europan lingues es membres del sam familie.</p>
+  <h2 class="textshadow-header">Europan Lingues</h2>
+</div>
+
+
+<div class="slide">
+  <h1>Browsersupport für Text-Shadow</h1>
+  <table class="support">
+    <caption>Support</caption>
+    <tr>
+      <td class="chrome">Chrome</td>
+      <td class="firefox">Firefox</td>
+      <td class="explorer">Internet Explorer</td>
+      <td class="opera">Opera</td>
+      <td class="safari">Safari</td>
+    </tr>
+    <tr>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+      <td>&plusmn;</td>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+    </tr>
+  </table>
+  <p class="incremental centered">
+    IEs 7 und 8 können keinen Text-Schatten. IE9 nur mit ekligem Filter.
+  </p>
+</div>
+
+
+<div class="slide transformers">
+  <h1>Transformers! *nänänänänä*</h1>
+  <div>
+    <h2>Normal</h2>
+    <img src="pics/biermann.jpg" width="160" height="120" alt="biermann">
+  </div>
+  <div>
+    <h2>Rotated</h2>
+    <img src="pics/biermann.jpg" width="160" height="120" alt="biermann" class="t-rotate">
+  </div>
+  <div>
+    <h2>Scaled</h2>
+    <img src="pics/biermann.jpg" width="160" height="120" alt="biermann" class="t-scale">
+  </div>
+  <hr>
+  <div class="no-top-margin">
+    <h2>Sönke breit</h2>
+    <img src="pics/biermann.jpg" width="160" height="120" alt="biermann" class="t-scale-w">
+  </div>
+  <div class="no-top-margin">
+    <h2>Skewed</h2>
+    <img src="pics/biermann.jpg" width="160" height="120" alt="biermann" class="t-skew">
+  </div>
+</div>
+
+
+<div class="slide">
+  <h1>Browsersupport für Transforms</h1>
+    <table class="support">
+    <caption>Support</caption>
+    <tr>
+      <td class="chrome">Chrome</td>
+      <td class="firefox">Firefox</td>
+      <td class="explorer">Internet Explorer</td>
+      <td class="opera">Opera</td>
+      <td class="safari">Safari</td>
+    </tr>
+    <tr>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+      <td>9+</td>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+    </tr>
+  </table>
+</div>
+
+
+<div class="slide">
+  <h1>Es lebt!</h1>
+  <table class="wobble">
+    <tbody>
+      <tr>
+        <td class="scale-item">
+          <h2>Product 1</h2>
+          <p>Best icecream in town. You have to buy it. Otherwise we will two kittens each day.</p>
+          <button>Buy me!</button>
+        </td>
+        <td class="scale-item">
+          <h2>Product 2</h2>
+          <p>Definitely <strong>the</strong> best product you've ever seen. Don't know what it is for - but great stuff!</p>
+          <button>Buy me big time!</button>
+        </td>
+        <td class="scale-item">
+          <h2>Product 3</h2>
+          <p>Whatever you're doing - do it quick. Consume! Consume and obey! Quick.</p>
+          <button>Buy me!</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <p class="ani-promo">
+    You want to buy me! You have to. You can't live without me!
+  </p>
+</div>
+
+
+<div class="slide">
+  <h1>Browsersupport für Transitions</h1>
+  <table class="support">
+    <caption>Support</caption>
+    <tr>
+      <td class="chrome">Chrome</td>
+      <td class="firefox">Firefox</td>
+      <td class="explorer">Internet Explorer</td>
+      <td class="opera">Opera</td>
+      <td class="safari">Safari</td>
+    </tr>
+    <tr>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+      <td>10+</td>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+    </tr>
+  </table>
+  <p class="incremental">Nur ein "Schmankerl" ...?</p>
+</div>
+
+<div class="slide">
+  <h1>Flipp'n'Flipp</h1>
+  <div id="flip-container1">
+    <div id="flip-card1">
+      <div class="back face">
+        <img src="pics/back.png" width="270" height="400" alt="Back of Playcard">
+      </div>
+      <div class="front face">
+        <img src="pics/king.png" width="270" height="400" alt="Playcard King">
+      </div>
+    </div>
+  </div>
+  <div id="flip-container2">
+    <div id="flip-card2">
+      <div class="back face">
+        <img src="pics/back.png" width="270" height="400" alt="Back of Playcard">
+      </div>
+      <div class="front face">
+        <img src="pics/queen.png" width="270" height="400" alt="Playcard Queen">
+      </div>
+    </div>
+  </div>
+  <div id="flip-container3">
+    <div id="flip-card3">
+      <div class="back face">
+        <img src="pics/back.png" width="270" height="400" alt="Back of Playcard">
+      </div>
+      <div class="front face">
+        <img src="pics/ass.png" width="270" height="400" alt="Playcard As">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="slide">
+  <h1>Browsersupport für 3D Transforms</h1>
+  <table class="support">
+    <caption>Support</caption>
+    <tr>
+      <td class="chrome">Chrome</td>
+      <td class="firefox">Firefox</td>
+      <td class="explorer">Internet Explorer</td>
+      <td class="opera">Opera</td>
+      <td class="safari">Safari</td>
+    </tr>
+    <tr>
+      <td>&hearts;</td>
+      <td>&mdash;</td>
+      <td>&mdash;</td>
+      <td>&mdash;</td>
+      <td>&hearts;</td>
+    </tr>
+  </table>
+  <p class="incremental center">Benötigt JavaScript-Fallback.</p>
+  <p class="incremental center">Wir benutzen es an einer Stelle: Login > "Passwort vergessen"</p>
+</div>
+
+<div class="slide">
+  <h1>Aaaaand: Action!</h1>
+  <h2 class="top-margin">Die Komponenten</h2>
+  <img src="pics/alster.jpg" class="top-margin">
+  <img src="pics/alster-busch.png">
+  <img src="pics/boat.png">
+</div>
+
+
+<div class="slide">
+  <h1>Aaaaand: Action!</h1>
+  <h2 class="top-margin">Die Komposition</h2>
+  <div class="alster">
+    <div class="vorgrund"></div>
+    <div class="boot"></div>
+  </div>
+</div>
+
+<div class="slide">
+  <h1>Browsersupport für Animations</h1>
+  <table class="support">
+    <caption>Support</caption>
+    <tr>
+      <td class="chrome">Chrome</td>
+      <td class="firefox">Firefox</td>
+      <td class="explorer">Internet Explorer</td>
+      <td class="opera">Opera</td>
+      <td class="safari">Safari</td>
+    </tr>
+    <tr>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+      <td>&mdash;</td>
+      <td>&plusmn;</td>
+      <td>&hearts;</td>
+    </tr>
+  </table>
+  <p class="incremental center">Animationen benötigen viele Präfixe. Und dann sind sie sehr verschachtelt. = Teuer.</p>
+  <p class="incremental center">Wenn, dann extrem sparsam einsetzen.</p>
+</div>
+
+
+<div class="slide">
+  <h1>Rappen</h1>
+  <p>Was macht man mit zu langen Worten? - Man rappt sie! Ähhh ... Man man man man macht ein <em>word-wrap</em>.</p>
+  <h3>Normal</h3>
+  <div class="wordwrap">
+    Superkallifragilistischexpialigetisch
+  </div>
+  <h3>Gewrapt</h3>
+  <div class="wordwrap break">
+    Superkallifragilistischexpialigetisch
+  </div>
+</div>
+
+
+<div class="slide">
+  <h1>Browsersupport für Word-Wrap</h1>
+  <table class="support">
+    <caption>Support</caption>
+    <tr>
+      <td class="chrome">Chrome</td>
+      <td class="firefox">Firefox</td>
+      <td class="explorer">Internet Explorer</td>
+      <td class="opera">Opera</td>
+      <td class="safari">Safari</td>
+    </tr>
+    <tr>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+    </tr>
+  </table>
+</div>
+
+<div class="slide">
+  <h1>Und jetzt: HTML5</h1>
+  <p>
+    Ein bisschen technischer aber nicht minder spannend!
+  </p>
+  <div class="html5-start">
+      &lt;figure&gt;<img src="pics/technics.jpg" width="500" height="354" alt="Waschmaschinen sind auch spannend">&lt;/figure&gt;
+  </div>
+</div>
+
+<div class="slide">
+  <h1>Canvas</h1>
+  <ul class="top-margin">
+    <li>eine Art interaktive Malfläche</li>
+    <li class="incremental">Graphen</li>
+    <li class="incremental">ganze Spiele</li>
+  </ul>
+  <p class="incremental">Beispiel <a href="http://raphaeljs.com/pie.html" target="_blank">Statistiken</a></p>
+  <p class="incremental">Beispiel <a href="http://arandomurl.com/2010/07/25/html5-pacman.html" target="_blank">Spielchen</a></p>
+  
+</div>
+
+
+<div class="slide">
+  <h1>Browsersupport für Canvas</h1>
+  <table class="support">
+    <caption>Support</caption>
+    <tr>
+      <td class="chrome">Chrome</td>
+      <td class="firefox">Firefox</td>
+      <td class="explorer">Internet Explorer</td>
+      <td class="opera">Opera</td>
+      <td class="safari">Safari</td>
+    </tr>
+    <tr>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+      <td>9+</td>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+    </tr>
+  </table>
+</div>
+
+<!-- HTML5 START -->
+<div class="slide">
+  <h1>Inhalt lässt sich bearbeiten</h1>
+  <iframe src="contentedit.html" width="90%" height="280" frameborder="0">  
+  </iframe>
+  <p>Pures HTML5! Die Box hat ein <code>contenteditable="true"</code>. Das ist alles.</p>
+  <p class="incremental">Frage: Verstehen User das? Einfach direkt eintippen wie in einem Text-Editor?</p>
+  <p class="incremental">Könnte Sicherheitsrisiko beinhalten ...</p>
+</div>
+
+
+<div class="slide">
+  <h1>Browsersupport für contenteditable</h1>
+  <table class="support">
+    <caption>Support</caption>
+    <tr>
+      <td class="chrome">Chrome</td>
+      <td class="firefox">Firefox</td>
+      <td class="explorer">Internet Explorer</td>
+      <td class="opera">Opera</td>
+      <td class="safari">Safari</td>
+    </tr>
+    <tr>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+    </tr>
+  </table>
+</div>
+
+
+<div class="slide">
+  <h1>Details &amp; Summary</h1>
+  <details class="top-margin">
+    <summary>Dies ist ein Punkt, den mal einfach mal ausklappen kann</summary>
+    <p>
+      Damit Ihr indess erkennt, woher dieser ganze Irrthum gekommen ist, und weshalb man die Lust anklagt und den Schmerz lobet, so will ich Euch Alles eröffnen und auseinander setzen, was jener Begründer der Wahrheit und gleichsam Baumeister des glücklichen Lebens selbst darüber gesagt hat. Niemand, sagt er, verschmähe, oder hasse, oder fliehe die Lust als solche, sondern weil grosse Schmerzen ihr folgen, wenn man nicht mit Vernunft ihr nachzugehen verstehe.
+    </p>
+  </details>
+  <p class="incremental">
+    Wenig Support bisher, aber ein unglaublich effektives Features. Wenn das vom Browser nativ unterstützt wird, spart das eine Menge Arbeit.<br><br>
+    Nutzen wir bisher im Hilfecenter.
+  </p>
+</div>
+
+
+<div class="slide">
+  <h1>Browsersupport für Details &amp; Summary</h1>
+  <table class="support">
+    <caption>Support</caption>
+    <tr>
+      <td class="chrome">Chrome</td>
+      <td class="firefox">Firefox</td>
+      <td class="explorer">Internet Explorer</td>
+      <td class="opera">Opera</td>
+      <td class="safari">Safari</td>
+    </tr>
+    <tr>
+      <td>&hearts;</td>
+      <td>&#9785;</td>
+      <td>&#9785;</td>
+      <td>&#9785;</td>
+      <td>&#9785;</td>
+    </tr>
+  </table>
+</div>
+
+<div class="slide">
+  <h1>Semantic Tags</h1>
+  <p class="top-margin">
+    Neue Tags wie
+      &lt;article&gt;, &lt;header&gt;, &lt;footer&gt;, &lt;nav&gt;, &lt;aside&gt;, &lt;figure&gt; geben neue semantische Möglichkeiten und verbessern die Möglichkeiten des Stylings.
+  </p>
+  <p class="incremental">
+    Setzen wir verstärkt in Topics ein
+  </p>
+  <p class="incremental">
+    Nicht unbedingt UX relevant ...
+  </p>
+</div>
+
+
+<div class="slide">
+  <h1>Browsersupport für Semantic Tags</h1>
+  <table class="support">
+    <caption>Support</caption>
+    <tr>
+      <td class="chrome">Chrome</td>
+      <td class="firefox">Firefox</td>
+      <td class="explorer">Internet Explorer</td>
+      <td class="opera">Opera</td>
+      <td class="safari">Safari</td>
+    </tr>
+    <tr>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+    </tr>
+  </table>
+</div>
+
+
+<div class="slide">
+  <h1>HTML5 Form Features</h1>
+  <ul class="top-margin">
+    <li>Eines der mächtigsten und umfangreichsten Features</li>
+    <li>Teilweise schwierig zu stylen</li>
+  </ul><br>
+  <hr>
+  <iframe src="forms.html" frameborder="0" width="90%" height="350">
+  </iframe>
+</div>
+
+<div class="slide">
+  <h1>HTML5 Form Features</h1>
+  <p>Seid mutig! Seid verwegen! Wagt etwas! Lasst die Browser die Fehlermeldungen generieren.</p>
+  <div class="top-margin center">
+    <img src="pics/validation-output.jpg" width="671" height="155" alt="verschiedene Validierungen" class="incremental">
+  </div>
+</div>
+
+
+<div class="slide">
+  <h1>Browsersupport für HTML5 Form Features</h1>
+  <table class="support">
+    <caption>Support</caption>
+    <tr>
+      <td class="chrome">Chrome</td>
+      <td class="firefox">Firefox</td>
+      <td class="explorer">Internet Explorer</td>
+      <td class="opera">Opera</td>
+      <td class="safari">Safari</td>
+    </tr>
+    <tr>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+      <td>10+</td>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+    </tr>
+  </table>
+</div>
+
+
+<div class="slide">
+  <h1>Fortschritt anzeigen!</h1>
+
+  <p class="top-margin">Your score is: <meter id="meteri" min="0" max="100" value="0">2 out of 10</meter><span id="meteriSpan" style="display:none;margin-left: 10px">-done-</span></p>
+  <p>Your score is: <progress id="progressi" max="100"></progress><span id="progressiSpan" style="display:none;margin-left: 10px">-done-</span></p>
+  <button id="Bibabutton">Start Progress!</button>
+  <script>
+    document.getElementById("Bibabutton").onclick = function() { 
+      var start = 0;
+      var inter = setInterval(function(){
+        console.log(1233);
+        start = start + 10;
+        document.getElementById("meteri").value=(start%100);
+        document.getElementById("progressi").value=(start%100);
+        if(start == 100) {
+          clearInterval(inter);
+          document.getElementById("progressiSpan").style.display = "inline";
+          document.getElementById("meteriSpan").style.display = "inline";
+        }
+      },1000);
+    };
+  </script>
+</div>
+
+
+<div class="slide">
+  <h1>Browsersupport für Progress &amp; Meter</h1>
+  <table class="support">
+    <caption>Support</caption>
+    <tr>
+      <td class="chrome">Chrome</td>
+      <td class="firefox">Firefox</td>
+      <td class="explorer">Internet Explorer</td>
+      <td class="opera">Opera</td>
+      <td class="safari">Safari</td>
+    </tr>
+    <tr>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+      <td>10+</td>
+      <td>&hearts;</td>
+      <td>&#9785;</td>
+    </tr>
+  </table>
+</div>
+
+
+<div class="slide">
+  <h1>Geolocation</h1>
+  <ul class="top-margin">
+  <li><strong>Der</strong> Trend überhaupt.</li>
+  <li class="incremental">liefert auf einfachste Weise 'Relevanz' für den User</li>
+  <li class="incremental">Einchecken, gezielte Angebote und auch Tracking (FB) sind möglich</li>
+  <li class="incremental">Browser stellt Sicherheitsabfrage</li>
+  </ul>
+  
+  <p class="incremental">Beispiel <a href="http://www.ralscha.ch/maps/map9.html" target="_blank">Standortbestimmung</a></p>
+</div>
+
+
+<div class="slide">
+  <h1>Browsersupport für Geolocation</h1>
+  <table class="support">
+    <caption>Support</caption>
+    <tr>
+      <td class="chrome">Chrome</td>
+      <td class="firefox">Firefox</td>
+      <td class="explorer">Internet Explorer</td>
+      <td class="opera">Opera</td>
+      <td class="safari">Safari</td>
+    </tr>
+    <tr>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+      <td>9+</td>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+    </tr>
+  </table>
+</div>
+
+
+<div class="slide">
+  <h1>Web Notifications</h1>
+  <p class="top-margin">
+  Beispiel für persistente Nachrichten auf dem Desktop <a href="http://www.html5rocks.com/en/tutorials/notifications/quick#toc-twitter-example" target="_blank">Twitter</a>
+  </p>
+ </div>
+
+
+<div class="slide">
+  <h1>Browsersupport für Web Notifications</h1>
+  <table class="support">
+    <caption>Support</caption>
+    <tr>
+      <td class="chrome">Chrome</td>
+      <td class="firefox">Firefox</td>
+      <td class="explorer">Internet Explorer</td>
+      <td class="opera">Opera</td>
+      <td class="safari">Safari</td>
+    </tr>
+    <tr>
+      <td>&hearts;</td>
+      <td>&#9785;</td>
+      <td>&#9785;</td>
+      <td>&#9785;</td>
+      <td>&#9785;</td>
+    </tr>
+  </table>
+</div>
+
+
+<div class="slide">
+  <h1>"Ich will den ganz großen Bildschirm!"</h1>
+  <p class="top-margin">Ernsthaft, das ist komplett nativ !!!</p>
+  
+  <img src="pics/david.jpg" id="david" onclick="bla();" width="776" height="1200" alt="The Hoff onna beach">
+  <script>
+  function bla() {
+  document.getElementById("david").webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+  }
+  </script>
+</div>
+
+
+<div class="slide">
+  <h1>Browsersupport für Full Screen API</h1>
+  <table class="support">
+    <caption>Support</caption>
+    <tr>
+      <td class="chrome">Chrome</td>
+      <td class="firefox">Firefox</td>
+      <td class="explorer">Internet Explorer</td>
+      <td class="opera">Opera</td>
+      <td class="safari">Safari</td>
+    </tr>
+    <tr>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+      <td>&#9785;</td>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+    </tr>
+  </table>
+</div>
+
+
+<div class="slide">
+  <h1>PNG Alphatransparenz</h1>
+  <ul class="top-margin">
+    <li>Extrem unspektakulär</li>
+    <li class="incremental">Voller Support jetzt in allen Browsern</li>
+    <li class="incremental">Auch für Teiltransparenz</li>
+    <li class="incremental">
+      Wir benutzen die erstmals beim "Schatten"
+      <br>
+      <br>
+      <img src="pics/shadow.png" class="incremental" width="576" height="130" alt="Screenshot of shadow on XING">
+    </li>
+  </ul>
+</div>
+
+
+<div class="slide">
+  <h1>Browsersupport für PNG Alphatransparenz</h1>
+  <table class="support">
+    <caption>Support</caption>
+    <tr>
+      <td class="chrome">Chrome</td>
+      <td class="firefox">Firefox</td>
+      <td class="explorer">Internet Explorer</td>
+      <td class="opera">Opera</td>
+      <td class="safari">Safari</td>
+    </tr>
+    <tr>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+      <td>&hearts;</td>
+    </tr>
+  </table>
+</div>
+
+
+
+<!-- die letzten beiden Folien -->
+<div class="slide">
+  <h1>Tipps und Quellen</h1>
+  
+  <ul class="top-margin linklist">
+    <li><a href="https://www.xing.com">XING</a></li>
+    <li><a href="http://www.html5rocks.com">HTML5 Rocks</a></li>
+    <li><a href="http://www.diveintohtml5.info">Dive Into HTML5</a></li>
+    <li><a href="http://www.caniuse.com">When can I use ...</a></li>
+  </ul>
+</div>
+
+
+<div class="slide">
+  <h1>Schluss. Aus. Finito. Das war's.</h1>
+  <p>Danke f&uuml;r die Aufmerksamkeit.</p>
+  <div class="center"><img src="pics/tataa.jpg" width="600" height="308" alt="The show is over - Thank you!"></div>
+</div>
+
+
+</div>
+
+</body>
+</html>

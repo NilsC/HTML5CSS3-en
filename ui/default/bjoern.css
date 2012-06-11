@@ -1,0 +1,24 @@
+/* BJOERNS CSS */
+
+#rangeSliderVal {
+	margin-left: 5px
+}
+
+details {
+	-webkit-transition: height 2s linear 1s;
+}
+
+details p {
+	font-size: .9em;
+	height: 100%;
+	padding-left: 2em;
+}
+
+.html5-start {
+  height: 354px;
+  text-align: center;
+}
+
+.html5-start img {
+  margin: 0 10px;
+}
