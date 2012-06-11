@@ -1,0 +1,177 @@
+/* NICHT S5-Zeugs */
+
+.support {
+  border: 1px solid #b5b5b5;
+  border-top: none;
+  border-left: none;
+  background: #efefef;
+  margin: 2em auto 0;
+  padding: 1em;
+  text-align: center;
+}
+
+.support caption {
+	font-weight: bold;
+	padding-bottom: .2em;
+	text-align: left;
+}
+
+.support td {
+	-webkit-box-shadow: inset 0px 3px 3px 0px #969696;
+	-moz-box-shadow: inset 0px 3px 3px 0px #969696;
+	box-shadow: inset 0px 3px 3px 0px #969696;
+	border-bottom: 1px solid #fff;
+	padding: 3px 0;
+	text-shadow: #8f9090 1px 1px 2px;
+	width: 70px;
+}
+
+.chrome,
+.firefox,
+.explorer,
+.opera,
+.safari {
+	background: transparent url(../../pics/browser-icons.png) 0 0 no-repeat;
+	-webkit-box-shadow: none;
+	   -moz-box-shadow: none;
+	        box-shadow: none;
+	font-size: 0%;
+	height: 55px;
+	padding: 0;
+	text-indent: -9999px;
+}
+
+.chrome {
+	background-position: 11px -187px;
+}
+
+.firefox {
+	background-position: 11px 5px;
+}
+
+.explorer {
+	background-position: 11px -60px;
+}
+
+.opera {
+	background-position: 11px -125px;
+}
+
+.safari {
+	background-position: 11px -248px;
+}
+
+code {
+	background-color: #e6e6e6;
+	border-radius: 3px;
+	font-size: 13px;
+	padding: 3px;
+}
+
+#mapcanvas {
+	-webkit-box-shadow: 0px 0px 10px 3px #b6b6b6;
+	   -moz-box-shadow: 0px 0px 10px 3px #b6b6b6;
+	        box-shadow: 0px 0px 10px 3px #b6b6b6;
+	margin-left: 10px;
+}
+
+.fail {
+	background-color: #f00717;
+	color: #fff;
+	padding: 2px 4px;
+}
+
+.success {
+	background-color: #00d530;
+	color: #fff;
+	padding: 2px 4px;
+}
+
+.examplebox {
+	border: 1px dashed #ccc;
+	margin-left: 60px;
+	padding: 15px;
+	background: url(../../pics/edit.png) no-repeat right bottom;
+}
+
+.examplebox:focus {
+	background: none;
+}
+
+.examplebox h3 {
+	margin-top: 0;
+}
+
+.examplebox ul {
+	margin-left: 18px;
+}
+
+.center {text-align: center;}
+
+.slide ul {
+	font-size: 0.9em;
+	margin-top: 20px;
+}
+
+.slide label {
+	font-size: 0.5em;
+}
+
+button {
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0.1,#E0E472),color-stop(0.9,#BCC605));
+	border: 1px solid #BFBFBF;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	color: #333;
+	font: normal normal bold .7em/1em arial,helvetica,sans-serif;
+	margin: 0 0 10px 0;
+	padding: 5px 10px;
+	text-shadow: white 0 1px 2px;
+	white-space: nowrap;
+}	
+			
+button:hover {
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0.1,#E0E472),color-stop(0.9,#AEB805));
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.browsers-head {
+  font-weight: bold;
+}
+
+.browsers-head span {
+  background: transparent;
+  color: #aaa;
+  font-weight: normal;
+}
+
+.browsers {
+  font-size: .9em;
+}
+
+.browsers li:nth-child(even) {
+  background-color: #cfdc00;
+}
+
+.browsers span {
+  background: transparent;
+  display: inline-block;
+  width: 60%;
+}
+
+hr {
+  background: #ccc;
+  border: 1px solid #ccc;
+  clear: both;
+  margin: 1em 0;
+}
+
+.transformers div.no-top-margin {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.clear {
+  clear: both;
+}

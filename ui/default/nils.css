@@ -1,0 +1,416 @@
+/* NILS' CSS */
+
+.generated-content {display: inline; margin: 1em 0; padding: 0 .4em; position: relative;}
+.generated-content:before {content: "\2660"; display: block; left: -.4em; position: absolute; top: 0;}
+.generated-content:after {content: "\2660"; display: block; right: -.4em; position: absolute; top: 0;}
+
+/* Gradients */
+.gradientbox {
+	border: 1px solid #ccc;
+	float: left;
+	height: 6em;
+	margin: 2em .5em 0 0;
+	width: 6em;
+}
+
+.horizontal {
+	background-image: -webkit-linear-gradient(left , #1B5CAB 0%, #71C77E 100%);
+}
+
+.vertical {
+	background-image: -webkit-linear-gradient(top, #165710 0%, #D1B8CE 100%);
+}
+
+.diagonal {
+	background-image: -webkit-linear-gradient(right top, #000000 0%, #FFFFFF 80%);
+}
+
+.radial {
+	background-image: -webkit-gradient(radial, 50% 50%, 132, 50% 50%, 29,  from(#A4FC21), to(#CF0C13));
+}
+
+.shiny {
+	background-image: -webkit-linear-gradient(bottom, #4C728F 55%, #FFFFFF 65%, #89CAD0 77%);
+}
+
+/* 3D */
+#flip-container1,
+#flip-container2,
+#flip-container3 {
+	float: left;
+ 	height: 400px;
+ 	margin: 1em 10px 0 0;
+  position: relative;
+  width: 270px;
+  z-index: 1;
+}
+   
+.face.front {
+	display: none;
+}
+   
+@media all and (-webkit-transform-3d) {
+	/* Use the media query to determine if 3D transforms are supported */
+	#flip-container1,
+    #flip-container2,
+    #flip-container3 {
+    	-webkit-perspective: 1000;
+    }
+    
+    #flip-card1,
+    #flip-card2,
+    #flip-card3 {
+    	width: 100%;
+       	height: 100%;
+       	-webkit-transform-style: preserve-3d;
+       	-webkit-transition: -webkit-transform 1s;
+    }
+
+    #flip-container1:hover #flip-card1,
+    #flip-container2:hover #flip-card2,
+    #flip-container3:hover #flip-card3 {
+    	-webkit-transform: rotateY(180deg);
+    }
+    
+    .face {
+    	position: absolute;
+       	width: 100%;
+       	height: 100%;
+       	-webkit-backface-visibility: hidden;
+    }
+
+    .face.front {
+    	display: block;
+       	-webkit-transform: rotateY(180deg);
+       	-webkit-box-sizing: border-box;
+    }
+}
+
+/* rounded borders */
+.rounded {
+  border: 1px solid #fff;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  float: left;
+  margin-top: 1em;
+  height: 333px;
+  overflow: hidden;
+  width: 500px;
+}
+
+.pseudo-ol {
+  float: left;
+  line-height: 1.3em;
+  margin: 1em 0 0 1em;
+  width: 40%;
+}
+
+.pseudo-ol dt {
+  background: #CFDC00;
+  -webkit-border-radius: .7em;
+  border-radius: .7em;
+  color: white;
+  height: 1.3em;
+  margin-bottom: .7em;
+  text-align: center;
+  width: 1.3em;
+}
+
+.pseudo-ol dd {
+  margin: -1.9em 0 .7em 2em;
+}
+
+/* min-max-width-height */
+.min-max-height {
+  background: #a3c741 url(../../pics/minmax-ruler.gif) no-repeat;
+  border: 1px solid #ccc;
+  margin-top: 1em;
+  min-height: 200px;
+  max-height: 300px;
+  padding: 0 20px;
+  width: 250px;
+}
+
+/* animation */
+.alster {
+  background: #ccc url(../../pics/alster.jpg);
+  height: 375px;
+  margin-top: 1em;
+  overflow: hidden;
+  position: relative;
+  width: 500px;
+}
+
+.vorgrund {
+  background: url(../../pics/alster-busch.png) right bottom no-repeat;
+  height: 375px;
+  position: absolute;
+  width: 500px;
+  z-index: 100;
+}
+
+@-webkit-keyframes theboat {
+	0% {
+		 left: 700px;
+	}
+	100% {
+		 left: -200px;
+	}
+}
+
+.boot {
+  background: url(../../pics/boat.png) no-repeat;
+  height: 123px;
+  position: absolute;
+  top: 150px;
+  width: 157px;
+  z-index: 50;
+  -webkit-animation: theboat 30s infinite linear;
+}
+
+.wobble {
+	background-color: #fff;
+	border: 1px solid #fff;
+	border-collapse: collapse;
+	font-size: .7em;
+	margin-top: 1em;
+	width: 90%;
+}
+
+.wobble td {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	padding: 10px 15px 20px;
+	vertical-align: top;
+	width: 32%;
+}
+
+.wobble td:nth-child(2n+2) {
+	background-color: #F2EDDF;
+}
+				
+/* hover for wobble-table */
+.scale-item:hover {
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,.5);
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,.5);
+	-webkit-transform: scale(1.05);
+	-webkit-transition-property: scale;
+	-webkit-transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease-in-out;
+}
+
+.ani-promo {
+  background-color: #686868;
+  border: 3px solid #000;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  color: #fff;
+  margin-top: 1em;
+  padding: .5em 1em;
+  -webkit-transition: background-color 0.7s ease-in-out, border-color 0.7s ease-in-out, color 0.7s ease-in-out;
+}
+
+.ani-promo:hover {
+  background-color: #000;
+  border-color: #4aa2df;
+  color: yellow;
+  cursor: pointer;
+}
+
+/* box-shadows */
+.box-shadow1,
+.box-shadow2,
+.box-shadow3,
+.box-shadow4,
+.box-shadow5 {
+  background: #efefef;
+  border: 1px solid #ccc;
+	-webkit-border-radius: 10px;
+	        border-radius: 10px;
+	float: left;
+  height: 5em;
+  line-height: 5em;
+  margin: 1em .5em 0 0;
+  text-align: center;
+  vertical-align: middle;
+  width: 5em;
+}
+
+.box-shadow1 {
+  -webkit-box-shadow: 2px 2px 4px 2px #333;
+          box-shadow: 2px 2px 4px 2px #333;
+}
+
+.box-shadow2 {
+  -webkit-box-shadow: 0px 0px 10px 2px #333;
+          box-shadow: 0px 0px 10px 2px #333;
+}
+
+.box-shadow3 {
+  -webkit-box-shadow: 0px 5px 1px 0px #333;
+          box-shadow: 0px 5px 1px 0px #333;
+}
+
+.box-shadow4 {
+  -webkit-box-shadow: inset 3px 3px 5px 0px #333;
+          box-shadow: inset 3px 3px 5px 0px #333;
+}
+
+.box-shadow5 {
+  -webkit-box-shadow: 0 0 5px 2px #333, 20px -20px 10px #ccc, 30px 20px 50px #a3c741, -40px -30px 50px #3fafde;
+          box-shadow: 0 0 5px 2px #333, 20px -20px 10px #ccc, 30px 20px 50px #a3c741, -40px -30px 50px #3fafde;
+}
+
+/* multi backgrounds */
+.multibg {
+  background-image: url(../../pics/leser.png), url(../../pics/alster.jpg);
+  background-position: bottom right, top left;
+  background-repeat: no-repeat;
+  border: 1px solid #000;
+  -webkit-box-sizing: border-box;
+  color: #fff;
+  font-size: .8em;
+  height: 375px;
+  padding: 10px;
+  text-shadow: 1px 1px 1px #333;
+  width: 500px;
+}
+
+/* opacity */
+.opacity {
+  background: url(../../pics/alster.jpg);
+  border: 1px solid #000;
+  height: 375px;
+  margin-top: 1em;
+  position: relative;
+  width: 500px;
+}
+
+.opacity div {
+  background-color: #000;
+  border: 1px solid #fff;
+  -webkit-box-shadow: 0 0 5px 0 #333;
+  left: 74px;
+  opacity: 0.4;
+  position: absolute;
+  top: 100px;
+  width: 350px;
+}
+
+.opacity p {
+  color: #fff;
+  font-size: .8em;
+  margin: 10px;
+  text-align: center;
+  text-shadow: 1px 1px 1px #333;
+}
+
+/* overflow */
+.overflow {
+  border: 1px solid #333;
+  font-size: .8em;
+  margin-top: 1em;
+  overflow: hidden;
+  padding: 10px;
+  text-overflow: ellipsis;
+  width: 400px;
+  white-space: nowrap;
+}
+
+/* text-shadows */
+.textshadow1 {
+  background-color: #b38d2b;
+  color: #fff;
+  padding: 10px;
+  text-shadow: .1em .1em 0 rgba(0,0,0,.8);
+}
+.textshadow2 {
+  color: #333;
+  padding: 10px;
+  text-shadow: .1em .1em .2em #000;
+  border: 1px solid #ccc;
+}
+.textshadow3 {
+  color: #eee;
+  background-color: #666;
+  padding: 10px;
+  text-shadow: 0 -.1em 0 rgba(0,0,0,.9);
+}
+.textshadow4 {
+  color: #111;
+  background-color: #999;
+  padding: 10px;
+  text-shadow: 0 .1em 0 rgba(255,255,255,.5);
+}
+.textshadow-header {
+  color: #333;
+  padding: 10px;
+  text-shadow: .08em .08em .17em rgba(0,0,0,.5);
+  font: 1.3em Georgia, "Times New Roman", Times, serif;
+}
+
+/* transformers */
+.transformers div {
+  float: left;
+  margin: .8em .5em 0 0;
+  overflow: hidden;
+  padding: 30px;
+}
+
+.transformers div h2 {
+  margin-bottom: .8em;
+}
+
+.t-rotate {
+  -webkit-transform: rotate(20deg);
+}
+
+.t-scale {
+  -webkit-transform: scale(.7);
+}
+
+.t-scale-w {
+  -webkit-transform: scaleX(2);
+}
+
+.t-skew {
+  -webkit-transform: skew(10deg,5deg);
+}
+
+/* transitions */
+.pulse {
+  margin-top: 2em;
+  padding-top: 2em;
+  text-align: center;
+}
+
+.pulse strong {
+  background: #4fff3b;
+  border: .1em solid #111;
+  border-radius: .3em;
+  font-size: 4em;
+  padding: .3em .7em;
+  text-transform: uppercase;
+  -webkit-transition: background 2s ease-in-out 0.5s, border-color 2s ease-in-out 0.5s, color 2s ease-in-out 0.5s;
+}
+
+.pulse strong:hover {
+  background: #204b92;
+  border-color: #dfd500;
+  color: #fff;
+}
+
+/* word-wrap */
+.wordwrap {
+  background: #efefef;
+  border: 1px solid #ccc;
+  margin: .7em 0 .3em;
+  padding: 10px;
+  width: 230px;
+}
+
+.wordwrap.break{
+  word-wrap: break-word;
+}
